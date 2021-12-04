@@ -16,8 +16,7 @@ class DetailsPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Email : ${userController.email.value}",style: const TextStyle(fontSize: 20),),
-            Text("Name  : ${userController.name.value}",style: const TextStyle(fontSize: 20),),
+         
           ],
         ),
       ),
