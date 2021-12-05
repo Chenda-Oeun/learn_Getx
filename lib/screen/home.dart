@@ -1,4 +1,5 @@
 import 'package:beginner/controller/user_controller.dart';
+import 'package:beginner/screen/create_user.dart';
 import 'package:beginner/screen/customer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,7 +12,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,17 +31,28 @@ class _HomePageState extends State<HomePage> {
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
-                    onPressed: (){
-                      Get.to(()=> const Customer());
+                    onPressed: () {
+                      Get.to(() => const Customer());
                     },
                     child: const Text("Customer"),
                   ),
-                )
+                ),
+                const SizedBox(height: 20),
+                SizedBox(
+                  width: double.infinity,
+                  height: 50,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Get.to(() => const CreateUser());
+                    },
+                    child: const Text("Create User"),
+                  ),
+                ),
               ],
             ),
           ),
         ),
-        ),
+      ),
     );
   }
 }

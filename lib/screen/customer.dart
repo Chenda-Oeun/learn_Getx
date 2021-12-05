@@ -1,4 +1,5 @@
 import 'package:beginner/controller/user_controller.dart';
+import 'package:beginner/helper/app_defualt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -33,7 +34,7 @@ class _CustomerState extends State<Customer> {
               : SingleChildScrollView(
                 child: Padding(
                     padding:
-                        const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+                        EdgeInsets.symmetric(horizontal: padding, vertical: padding),
                     child: Column(
                       children: _userCon.userList
                           .map((user) => Card(
